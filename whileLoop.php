@@ -58,3 +58,26 @@
 	?>
     </body>
 </html>
+
+<!-- Another Do/While Loop example -->
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Your own do-while</title>
+        <link type='text/css' rel='stylesheet' href='style.css'/>
+	</head>
+	<body>
+    <?php
+        //write your do-while loop below
+       $rollCount = 0;
+       do {
+       $roll= rand(1,6);
+       $rollCount++;
+       echo "<p>We are on roll $rollCount and the number is $roll</p>";
+       } while($roll != 6); {
+           echo "<p>It took $rollCount to get a 6</p>";
+       }
+
+    ?>
+    </body>
+</html>
