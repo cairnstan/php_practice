@@ -38,3 +38,37 @@
 	?>
 	</p>
 </html>
+
+<!-- combining simple functions -->
+<html>
+    <p>
+	<?php
+	// Create an array and push on the names
+    // of your closest family and friends
+     $loves = array();
+    array_push($loves, "elliot");
+    array_push($loves, "anna");
+    array_push($loves, "alexis");
+    array_push($loves, "jaime");
+    array_push($loves, "jess");
+    array_push($loves, "markie");
+    array_push($loves, "matt");
+    array_push($loves, "dan");
+    array_push($loves, "kevin");
+    array_push($loves, "brooke");
+    array_push($loves, "leon");
+	count($loves);
+	// Sort the list
+	//print $loves[rand(0,10)];
+    sort($loves);
+
+    //print join( ", ", $loves);
+	// Randomly select a winner!
+    $chosenOne = $loves[rand(0, 10)];
+    print $chosenOne;
+	// Print the winner's name in ALL CAPS
+	$capsName = strtoupper($chosenOne);
+	print $capsName;
+	?>
+	</p>
+</html>
