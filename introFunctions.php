@@ -57,6 +57,14 @@
     array_push($loves, "kevin");
     array_push($loves, "brooke");
     array_push($loves, "leon");
+    array_push($loves, "colleen");
+    array_push($loves, "kaela");
+    array_push($loves, "connie");
+    array_push($loves, "kaija");
+    array_push($loves, "kendra");
+    array_push($loves, "manda");
+    array_push($loves, "ned");
+    array_push($loves, "eric");
 	count($loves);
 	// Sort the list
 	//print $loves[rand(0,10)];
@@ -64,7 +72,7 @@
 
     //print join( ", ", $loves);
 	// Randomly select a winner!
-    $chosenOne = $loves[rand(0, 10)];
+    $chosenOne = $loves[rand(0, 18)];
     print $chosenOne;
 	// Print the winner's name in ALL CAPS
 	$capsName = strtoupper($chosenOne);
